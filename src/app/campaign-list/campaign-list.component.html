@@ -1,0 +1,4 @@
+<div class="card" *ngFor="let campaign of campaigns" (click)="goToDetailPage(campaign)">
+  <h2>{{campaign.title}}</h2>
+  <p>{{campaign.description}}</p>
+</div>
