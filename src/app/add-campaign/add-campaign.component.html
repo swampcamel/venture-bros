@@ -1,0 +1,59 @@
+<h3>Start Thy New Venture</h3>
+<div class="">
+  <div class="">
+    <label>Title of Thine Campaign: </label>
+    <br>
+    <input #newTitle>
+  </div>
+  <div class="">
+    <div class="">
+      <label>Give Thine Campaign an ID (no spaces): </label>
+      <br>
+      <input #newId>
+    </div>
+    <label>Description of Thine Campaign: </label>
+    <br>
+    <input type="text" #newDescription>
+  </div>
+  <div class="">
+    <label>Thine Funding Goal: </label>
+    <br>
+    <input type="number" #newFundingGoal>
+  </div>
+  <div class="">
+    <label>What sort of Champagne is Thine Campaign? </label>
+    <br>
+    <input #newType>
+  </div>
+  <div class="">
+    <label>Thine Name: </label>
+    <br>
+    <input #newFullName>
+  </div>
+  <div class="">
+    <label>Thine Position: </label>
+    <br>
+    <input #newPosition>
+  </div>
+  <div class="">
+    <label>Thine Celestial Bearing: </label>
+    <br>
+    <input #newZodiacSign>
+  </div>
+  <div class="">
+    <label>Reward Tier Name: </label>
+    <br>
+    <input #newRewardTier>
+  </div>
+  <div class="">
+    <label>The Reward Itself: </label>
+    <br>
+    <input #newReward>
+  </div>
+  <div class="">
+    <label>Elitism Fee: </label>
+    <br>
+    <input type="number" #newPricePoint>
+  </div>
+  <button type="button" (click)="addNewCampaign(newDescription.value, newFundingGoal.value, newId.value, newTitle.value, newType.value, newFullName.value, newPosition.value, newZodiacSign.value, newPricePoint.value, newReward.value, newRewardTier.value); newDescription.value=''; newFundingGoal.value=''; newId.value=''; newTitle.value=''; newType.value=''; newFullName.value=''; newPosition.value=''; newZodiacSign.value=''; newPricePoint.value=''; newReward.value=''; newRewardTier.value=''">FKN SEND IT</button>
+</div>
